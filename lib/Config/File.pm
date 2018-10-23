@@ -47,7 +47,7 @@ sub read_config_file($) {
     }
     $fh->close;
 
-    return $conf;
+    return $conf // {};
 }
 
 1;

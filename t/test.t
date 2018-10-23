@@ -7,7 +7,7 @@ use Test;
 
 # First check that the module loads OK.
 use vars qw($loaded);
-BEGIN { $| = 1; plan tests => 11; }
+BEGIN { $| = 1; plan tests => 13; }
 END { print "not ok 1\n" unless $loaded; }
 
 use Config::File;
@@ -40,3 +40,7 @@ ok( $config->{dummy}->{3}, 'data 3' );
 
 print "! Testing whether we correctly ignore invalid keys\n";
 ok( scalar( keys %$config ), 6 );
+
+my $empty_config = Config::File::read_config_file("t/empty_config");
+ok( defined($empty_config) );
+ok( ref($empty_config), 'HASH' );
