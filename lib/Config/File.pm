@@ -40,7 +40,8 @@ sub read_config_file($) {
               . " - Ignoring";
             next;
         }
-        $conf_ele = '$conf->{' . join( "}->{", split /[][]+/, $conf_ele ) . "}";
+        $conf_ele =
+          '$conf->{"' . join( '"}->{"', split /[][]+/, $conf_ele ) . '"}';
         $conf_data =~ s!([\\\'])!\\$1!g;
         eval "$conf_ele = '$conf_data'";
     }
