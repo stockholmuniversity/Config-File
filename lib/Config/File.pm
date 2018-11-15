@@ -8,7 +8,7 @@ use IO::File;
 use vars qw($VERSION @ISA @EXPORT_OK);
 @ISA       = qw/Exporter/;
 @EXPORT_OK = qw/read_config_file/;
-$VERSION   = '1.50';
+$VERSION   = '1.51';
 
 sub read_config_file($) {
     my ( $conf, $file, $fh, $line_num );
