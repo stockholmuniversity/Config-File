@@ -9,14 +9,9 @@ author:
 abstract: Parse a simple configuration file
 license: gpl
 resources:
-  bugtracker:
-    web: https://github.com/stockholmuniversity/Config-File/issues
+  bugtracker: https://github.com/stockholmuniversity/Config-File/issues
   license: http://opensource.org/licenses/gpl-license.php
   homepage: https://github.com/stockholmuniversity/Config-File
-  repository:
-    type: git
-    url: https://github.com/stockholmuniversity/Config-File.git
-    web: https://github.com/stockholmuniversity/Config-File
 
 build_requires:
   Module::Build: 0
