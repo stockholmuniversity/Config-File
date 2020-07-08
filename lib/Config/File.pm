@@ -8,7 +8,7 @@ use IO::File;
 use vars qw($VERSION @ISA @EXPORT_OK);
 @ISA       = qw/Exporter/;
 @EXPORT_OK = qw/read_config_file/;
-$VERSION   = '1.53';
+$VERSION   = '1.54';
 
 sub read_config_file($) {
     my ( $conf, $file, $fh, $line_num );
@@ -170,7 +170,7 @@ it and/or modify it under the terms of the GPL.
 
 =head1 VERSION
 
-Version 1.53
+Version 1.54
 Copyright (c) 2002 Sebastien J. Gross. All rights reserved.
 Copyright (c) 2003-2018 Gunnar Wolf. All rights reserved.
 Copyright (c) 2018- Stockholm University. All rights reserved.

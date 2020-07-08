@@ -1,6 +1,6 @@
 ---
 name: Config-File
-version: 1.53
+version: 1.54
 author:
   - 'Gunnar Wolf <gwolf@gwolf.org>'
   - 'Sebastien J. Gross <seb@sjgross.org>'
@@ -25,7 +25,7 @@ build_requires:
 provides:
   Config::File:
     file: lib/Config/File.pm
-    version: 1.53
+    version: 1.54
 generated_by: Module::Build version 0.280801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
